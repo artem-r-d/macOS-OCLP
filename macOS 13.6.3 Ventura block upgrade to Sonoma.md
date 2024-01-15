@@ -3,22 +3,26 @@ Although not officially confirmed, there is a recurring bug in 13.6.3 Ventura th
 
 In order to block all macOS system upgrades, security patch upgrades, and software upgrades (such as Safari), you will need to perform these steps:
 1. Initialize target system with OSX or macOS. OCLP documentation states:
+2. 
 The patcher application requires OS X Yosemite 10.10 or later to run.
+
 OS X El Capitan 10.11 or later is required to make installers for macOS Ventura and later.
+
 The patcher is designed to target macOS Big Sur 11.x to macOS Sonoma 14.x.
+
 Other versions may work, albeit in a broken state. No support is provided for any version outside of the above.
 For most situations, using internet reinstallation of latest supported macOS should satisfy the requirement to get OCLP up and running, in order to create the desired Ventura installer.
-2. Use OCLP to create the Ventura installer.
-3. Before installation, clear the NVRAM/PRAM by holding Command-Option-P-R.
-4. Perform a clean installation of Ventura, including using the "Erase" function on the target disk (you may pick APFS and a name such as "Macintosh HD")
-5. During macOS guided setup, carefully choose to explore all the options (do not choose "quick setup" as this may automatically choose undesired defaults)
-6. Upon logging in with your only user, verify that wifi is off, and head straight into system settings > upgrade
-7. Set all auto upgrade options to off. Make sure everything says "off" and is grey.
+4. Use OCLP to create the Ventura installer.
+5. Before installation, clear the NVRAM/PRAM by holding Command-Option-P-R.
+6. Perform a clean installation of Ventura, including using the "Erase" function on the target disk (you may pick APFS and a name such as "Macintosh HD")
+7. During macOS guided setup, carefully choose to explore all the options (do not choose "quick setup" as this may automatically choose undesired defaults)
+8. Upon logging in with your only user, verify that wifi is off, and head straight into system settings > upgrade
+9. Set all auto upgrade options to off. Make sure everything says "off" and is grey.
 If you create another Administrator user make sure to repeat the process for that user as well. Any Administrator type user can set the system into macOS upgrade, even accidentally through bugs.
-9. Install Lulu. https://objective-see.org/products/lulu.html
-10. Once Lulu is up and running and can block processes from accessing the internet, go head and enable and connect to wifi.
-11. Blocking the following processes will disable all upgrades to the system:
-12. 
+10. Install Lulu. https://objective-see.org/products/lulu.html
+11. Once Lulu is up and running and can block processes from accessing the internet, go head and enable and connect to wifi.
+12. Blocking the following processes will disable all upgrades to the system:
+13. 
 betaenrollmentd (has to do with beta updates enrollment, may only show up for iCloud logged in users)
 
 mobileassetd (removes the red (1) in settings cog)
