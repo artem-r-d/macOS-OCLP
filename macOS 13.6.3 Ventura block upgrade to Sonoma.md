@@ -33,16 +33,16 @@ If you create another Administrator user make sure to repeat the process for tha
     
 10. Blocking the following processes will disable all upgrades to the system:
      
-betaenrollmentd (has to do with beta updates enrollment, may only show up for iCloud logged in users)
+**betaenrollmentd** (has to do with beta updates enrollment, may only show up for iCloud logged in users)
 
-mobileassetd (removes the red (1) in settings cog)
+**mobileassetd** (removes the red (1) in settings cog)
 
-promotedcontentd
+**promotedcontentd**
 
-softwareupdate_firstrun_tasks
+**softwareupdate_firstrun_tasks**
 
-softwareupdated (com.apple.softwareupdated)
+**softwareupdated** (com.apple.softwareupdated)
 
-softwareupdated (com.apple.mobile.softwareupdated)
+**softwareupdated** (com.apple.mobile.softwareupdated)
 
 11. It is possible that in later versions of Ventura such as 13.6.4, the notification bug will be fixed and Sonoma .app will not be installed outside of proper functions. In that case, disabling Lulu temporarily (with auto updates still set to off) may allow the user to update Safari separately and install security patches without being forced into Sonoma upgrade. More testing is needed.
