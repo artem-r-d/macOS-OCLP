@@ -18,10 +18,17 @@ If you create another Administrator user make sure to repeat the process for tha
 9. Install Lulu. https://objective-see.org/products/lulu.html
 10. Once Lulu is up and running and can block processes from accessing the internet, go head and enable and connect to wifi.
 11. Blocking the following processes will disable all upgrades to the system:
+12. 
 betaenrollmentd (has to do with beta updates enrollment, may only show up for iCloud logged in users)
+
 mobileassetd (removes the red (1) in settings cog)
+
 promotedcontentd
+
 softwareupdate_firstrun_tasks
+
 softwareupdated (com.apple.softwareupdated)
+
 softwareupdated (com.apple.mobile.softwareupdated)
-12. It is possible that in later versions of Ventura such as 13.6.4, the notification bug will be fixed and Sonoma .app will not be installed outside of proper functions. In that case, disabling Lulu temporarily (with auto updates still set to off) may allow the user to update Safari separately and install security patches without being forced into Sonoma upgrade. More testing is needed.
+
+14. It is possible that in later versions of Ventura such as 13.6.4, the notification bug will be fixed and Sonoma .app will not be installed outside of proper functions. In that case, disabling Lulu temporarily (with auto updates still set to off) may allow the user to update Safari separately and install security patches without being forced into Sonoma upgrade. More testing is needed.
